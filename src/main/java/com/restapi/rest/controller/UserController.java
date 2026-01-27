@@ -52,7 +52,7 @@ public class UserController {
         return repo.save(existing);
     }
 
-    // DELETE user by id
+    // DELETE user by ID
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable Long id) {
         repo.deleteById(id);
