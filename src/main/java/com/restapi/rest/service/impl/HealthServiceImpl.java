@@ -26,4 +26,9 @@ public class HealthServiceImpl implements HealthService {
         // Persist log entry (controller never talks to DB directly)
         return healthCheckLogRepository.save(new HealthCheckLog(status, message, now));
     }
+
+//    public String getUsernameById(int id){
+//        //call db by id
+//        return "name";
+//    }
 }
